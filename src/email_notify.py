@@ -49,8 +49,6 @@ class Email:
             logger.exception('Exception during email, returned error code: {0}, with message: {1}'.format(exception_code, exception_error))
 
 def main() -> None:
-    """
-    """
     logger.info('email_notify.py ran as main.')
     import doctest
     doctest.testmod(extraglobs={'email': Email('doctest ran.')})

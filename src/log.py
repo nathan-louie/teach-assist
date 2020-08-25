@@ -16,8 +16,6 @@ def create_logger(name: str) -> logging.getLogger():
     return logger
 
 def main() -> None:
-    """
-    """
     logger = create_logger(__name__)
     logger.info('log.py ran as main.')
     import doctest

@@ -47,8 +47,6 @@ class Retrieve:
         return (response.status_code == 200 and content_type is not None and content_type.find('html') > -1)
 
 def main() -> None:
-    """
-    """
     logger.info('get_data.py ran as main.')
     import doctest
     doctest.testmod(extraglobs={'carrier': Retrieve('', {})})
