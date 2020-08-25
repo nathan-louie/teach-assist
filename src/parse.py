@@ -1,9 +1,10 @@
 """
 """
 
-from src.log import create_logger
 from bs4 import BeautifulSoup
 import re
+
+from src.log import create_logger
 
 logger = create_logger(__name__)
 
@@ -43,8 +44,6 @@ class Parse:
 
 
 def main() -> None:
-    """
-    """
     logger.info('parse.py ran as main.')
     import doctest
     doctest.testmod()
