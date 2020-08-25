@@ -5,9 +5,9 @@ unittest class to test email_notify.py.
 import unittest
 
 from src import email_notify
-from src.log import setup_custom_logger
+from src.log import create_logger
 
-logger = setup_custom_logger(__name__)
+logger = create_logger(__name__)
 
 class TestEmail(unittest.TestCase):
     def testSendEmail(self) -> None:
@@ -37,8 +37,6 @@ class TestEmail(unittest.TestCase):
         self.assertEqual(smtp_server, 'smtp.gmail.com', 'Incorrect SMTP server found.')
 
 def main() -> None:
-    """
-    """
     logger.info('test_email_notify.py rain as main.')
     unittest.main()
 

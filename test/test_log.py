@@ -1,7 +1,11 @@
-import unittest
-import log
+"""
+"""
 
-logger = log.setup_custom_logger(__name__)
+import unittest
+
+from src.log import create_logger
+
+logger = create_logger(__name__)
 
 class TestLog:
     def testSetupCustomLogger(self):

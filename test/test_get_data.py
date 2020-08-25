@@ -1,7 +1,10 @@
-from src import get_data
+"""
+unittest class to test get_data.py.
+"""
+
 import unittest
 
-import src.get_data
+from src import get_data
 from src.log import create_logger
 
 logger = create_logger(__name__)

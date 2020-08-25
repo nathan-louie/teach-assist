@@ -1,8 +1,12 @@
-import unittest
-import log
-import schedule
+"""
+"""
 
-logger = log.setup_custom_logger(__name__)
+import unittest
+
+from src import schedule
+from src.log import create_logger
+
+logger = create_logger(__name__)
 
 class TestSchedule:
     def test(self):
